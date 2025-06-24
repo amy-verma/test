@@ -119,3 +119,59 @@ const App = () => {
 };
 
 export default App;
+
+
+
+
+sum(2)(3, 4)
+sum(2, 3, 4)
+sum(2, 3)(4)
+
+const person = {
+  name: "Alice",
+  greet: function () {
+    console.log(`Hello, I'm ${this.name}`);
+  },
+};
+
+const greetFn = person.greet;
+greetFn();
+
+
+
+function createCounter() {
+  let count = 0;
+
+  return function () {
+    count++;
+    console.log(count);
+  };
+}
+
+const counter1 = createCounter();
+const counter2 = createCounter();
+
+counter1(); // ?
+counter1(); // ?
+counter2(); // ?
+
+
+
+
+Create a simple Todo List app using React. The app should have the following features:
+
+🧩 Features:
+Add a new task:
+Input field to type the task.
+Button to add the task to the list.
+Prevent adding empty tasks.
+
+Display tasks:
+Show a list of all added tasks.
+
+Toggle task completion:
+Clicking on a task should toggle its completed state.
+Completed tasks should have a strikethrough style.
+
+Filter tasks:
+Show three buttons to filter: All, Active, Completed.
