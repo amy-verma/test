@@ -121,10 +121,11 @@ const App = () => {
 export default App;
 
 
-
+add
 
 sum(2)(3, 4)
 sum(2, 3, 4)
+
 sum(2, 3)(4)
 
 const person = {
@@ -175,3 +176,17 @@ Completed tasks should have a strikethrough style.
 
 Filter tasks:
 Show three buttons to filter: All, Active, Completed.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
