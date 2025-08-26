@@ -10,6 +10,9 @@ const App=()=>{
   }
 
   const handleAdd=()=>{
+    if(add.trim()===""){
+      return
+    }
     setList([...list,add])
     setAdd("")
   }
@@ -29,7 +32,7 @@ const App=()=>{
   <div>
     <ul>
       {
-        list.map((ele,i)=>{
+        list !=[] && list.map((ele,i)=>{
           return <li key={i}>{ele} <button onClick={()=>handleDelete(i)}>Delete</button></li> 
         })
       }
