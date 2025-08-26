@@ -10,7 +10,7 @@ const App=()=>{
   }
 
   const handleAdd=()=>{
-    if(add.trim()===""){
+    if(add.trim()===""){//to remove the while space
       return
     }
     setList([...list,add])
